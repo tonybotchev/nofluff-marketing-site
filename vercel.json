@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/hvac",
+      "destination": "https://hvac.nofluffmarketing.io/hvac",
+      "permanent": false
+    }
+  ]
+}
