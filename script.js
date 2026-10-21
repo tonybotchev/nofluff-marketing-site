@@ -3,7 +3,6 @@ document.querySelectorAll('[data-fit]').forEach(button=>button.addEventListener(
 document.getElementById('year').textContent=new Date().getFullYear();
 
 const requests={
-callshield:{title:'Your CallShield request',message:'I would like help with CallShield (never miss a call).'},
 reviews:{title:'Your Review Engine request',message:'I would like help with Review Engine.'},
 leads:{title:'Your Lead Machine request',message:'I would like help with Lead Machine / pipeline.'},
 booking:{title:'Your booking and reminders request',message:'I would like help with booking and reminders.'},
