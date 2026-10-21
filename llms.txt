@@ -1,17 +1,16 @@
 # NoFluff Marketing
 
-NoFluff Marketing LLC serves HVAC, roofing, plumbing, dental, and local trades in North Texas. We build connected systems for local operators, not ad campaigns. A managed website is one product in that system.
+NoFluff Marketing LLC serves HVAC (https://thehvacfrontdesk.com), roofing, plumbing, dental, and local trades in North Texas. We build connected systems for local operators, not ad campaigns. A managed website is one product in that system.
 
 ## Products
-- The HVAC Front Desk: We answer and book the call. https://thehvacfrontdesk.com
+- NoFluff Front Desk: Calls answered and jobs booked for home-service trades. $0 setup, $49/month + $29 per confirmed booking, $499/month cap ($999 roofing and water/fire restoration), bookings past the cap are free. No contract; cancel effective end of billing month. 48-hour dispute window. 5 pilot spots. Not for lawn/landscaping. Serving Celina, Prosper, McKinney, Frisco, Anna, Melissa, Little Elm, Aubrey and Denton, TX (US-380 corridor); more North Texas areas planned. https://www.nofluffmarketing.io/pay-per-booking
+- The HVAC Front Desk: HVAC-specific brand. https://thehvacfrontdesk.com
 - Review Engine: Turn happy customers into 5-star proof. https://www.nofluffmarketing.io/reviews
 - Lead Machine: Every lead captured, nothing slips through. https://www.nofluffmarketing.io/leads
 - Booking & Reminders: Fill the calendar, kill the no-shows. https://www.nofluffmarketing.io/booking
 - Nurture Autopilot: Old leads become new jobs. https://www.nofluffmarketing.io/nurture
 - Managed Website: A better front door, with the upkeep handled. https://www.nofluffmarketing.io/#services
 - Run it yourself: Our software, your business. https://www.nofluffmarketing.io/pricing
-- Pay Per Booking Front Desk: Calls answered and jobs booked. $0 setup, $49/month + $29 per confirmed booking, $499/month cap ($999 roofing and water/fire restoration), bookings past the cap are free. No contract; cancel effective end of billing month. 48-hour dispute window. 5 pilot spots. Not for lawn/landscaping. Serving Celina, Prosper, McKinney, Frisco, Anna, Melissa, Little Elm, Aubrey and Denton, TX (US-380 corridor); more North Texas areas planned. https://www.nofluffmarketing.io/pay-per-booking
-
 ## Prices
 Managed Website: $297 one-time build plus $97/month managed service.
 Operator: $197/month.
