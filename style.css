@@ -5,4 +5,103 @@
 
 .product-shelf{padding-top:95px;padding-bottom:100px;background:var(--ink);color:var(--paper)}.product-shelf>.eyebrow{color:var(--orange)}.product-shelf>h2{max-width:850px}.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:60px}.product-card{border:1px solid #ffffff25;border-radius:4px;padding:28px;background:#1a1b1d}.product-card .step-top{margin-bottom:28px;color:#a4a6a7}.product-card h3{font-size:26px;line-height:1.25;letter-spacing:-1px;font-weight:600;margin-bottom:14px}.product-promise{color:var(--paper);font-size:17px;line-height:1.6;min-height:55px;margin-bottom:24px}.product-card ul{padding:22px 0 0;margin:0;list-style:none;border-top:1px solid #ffffff20}.product-card li{position:relative;padding-left:19px;color:#a7aaad;font-size:15px;line-height:1.7;margin-bottom:13px}.product-card li:before{content:"";position:absolute;left:0;top:11px;width:4px;height:4px;background:var(--orange)}.product-card li:last-child{margin-bottom:0}.product-ownership{font-size:13px;line-height:1.7;color:#a7aaad;margin:24px 0 0;padding-top:20px;border-top:1px solid #ffffff20}@media(max-width:1100px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.product-shelf{padding-top:60px;padding-bottom:65px}.product-grid{grid-template-columns:1fr;gap:18px;margin-top:35px}.product-card{padding:25px}.product-promise{min-height:0}}
 /* Full-stack product paths; existing brand and layout rules preserved. */
-.product-card{display:flex;flex-direction:column}.product-actions{margin-top:auto;padding-top:28px;display:grid;gap:18px}.product-actions .button{font-size:13px;padding:14px 16px;gap:12px}.product-actions .text-link{justify-self:start}.pricing-intro,.pricing-note{max-width:690px;color:#5c6062;margin-top:28px}.pricing-table-wrap{overflow-x:auto;margin-top:35px}.pricing-table{width:100%;border-collapse:collapse;text-align:left;font-size:16px}.pricing-table caption{text-align:left;font-size:12px;color:#626963;padding-bottom:16px}.pricing-table th,.pricing-table td{border-bottom:1px solid #ced0cb;padding:20px 18px 20px 0;vertical-align:top}.pricing-table thead th{font-size:12px;text-transform:uppercase;letter-spacing:1px}.pricing-table tbody th{font-weight:600}.product-detail h1,#pricing-title:is(h1){font-size:clamp(44px,6vw,88px);line-height:1.12;letter-spacing:-.055em}.detail-promise{font-size:25px;margin:28px 0 20px}.detail-intro{max-width:740px;font-size:18px;line-height:1.8;color:#5c6062;margin:28px 0}.detail-process{grid-template-columns:repeat(3,1fr)}#change-request{background:none;border:0;border-bottom:1px solid currentColor;padding:0 0 5px;margin:0 0 20px;cursor:pointer}.header nav{gap:22px}@media(max-width:1100px){.header nav{gap:14px;font-size:13px}.header .brand-image{width:220px}}@media(max-width:760px){.header{height:auto;min-height:80px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px;row-gap:14px}.header nav{display:flex;order:3;width:100%;justify-content:space-between;gap:10px;font-size:12px}.header .brand-image{width:165px}.pricing-table{font-size:14px;min-width:460px}.pricing-table th,.pricing-table td{padding:16px 14px 16px 0}.detail-process{grid-template-columns:1fr}.product-detail h1,#pricing-title:is(h1){font-size:44px}}
+.product-card{display:flex;flex-direction:column}.product-actions{margin-top:auto;padding-top:28px;display:grid;gap:18px}.product-actions .button{font-size:13px;padding:14px 16px;gap:12px}.product-actions .text-link{justify-self:start}.pricing-intro,.pricing-note{max-width:690px;color:#5c6062;margin-top:28px}.pricing-table-wrap{overflow-x:auto;margin-top:35px}.pricing-table{width:100%;border-collapse:collapse;text-align:left;font-size:16px}.pricing-table caption{text-align:left;font-size:12px;color:#626963;padding-bottom:16px}.pricing-table th,.pricing-table td{border-bottom:1px solid #ced0cb;padding:20px 18px 20px 0;vertical-align:top}.pricing-table thead th{font-size:12px;text-transform:uppercase;letter-spacing:1px}.pricing-table tbody th{font-weight:600}.product-detail h1,#pricing-title:is(h1){font-size:clamp(44px,6vw,88px);line-height:1.12;letter-spacing:-.055em}.detail-promise{font-size:25px;margin:28px 0 20px}.detail-intro{max-width:740px;font-size:18px;line-height:1.8;color:#5c6062;margin:28px 0}.detail-process{grid-template-columns:repeat(3,1fr)}#change-request{background:none;border:0;border-bottom:1px solid currentColor;padding:0 0 5px;margin:0 0 20px;cursor:pointer}.header nav{gap:22px}.header nav a[aria-current="page"]{color:#fff}@media(max-width:1100px){.header nav{gap:14px;font-size:13px}.header .brand-image{width:220px}}@media(max-width:760px){.header{height:auto;min-height:80px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px;row-gap:14px}.header nav{display:flex;order:3;width:100%;justify-content:space-between;gap:10px;font-size:12px}.header .brand-image{width:165px}.pricing-table{font-size:14px;min-width:460px}.pricing-table th,.pricing-table td{padding:16px 14px 16px 0}.detail-process{grid-template-columns:1fr}.product-detail h1,#pricing-title:is(h1){font-size:44px}}
+
+/* Pay per booking */
+.ppb-header-call{white-space:nowrap;gap:12px}
+a.button[href^="tel:"]{justify-content:center}
+.header nav a{white-space:nowrap}
+.ppb-hero .hero-actions{flex-direction:row;align-items:center;flex-wrap:wrap}
+.ppb-hero{background:var(--ink);color:#fff;padding-top:48px;padding-bottom:56px}
+.ppb-hero .eyebrow{color:#c1c1c1;display:flex;align-items:center;gap:12px}
+.ppb-hero h1{max-width:15em;font-size:clamp(36px,4.4vw,64px);line-height:1.08;letter-spacing:-.045em;font-weight:600;margin-bottom:22px}
+.ppb-lede{max-width:740px;color:#c5c7c8;font-size:18px;line-height:1.7;margin-bottom:32px}
+.ppb-crumb ol{display:flex;flex-wrap:wrap;gap:8px 0;list-style:none;padding:0;margin:0 0 28px;font-size:13px;color:#9a9ea0}
+.ppb-crumb li+li:before{content:"/";margin:0 10px;color:#5e6366}
+.ppb-crumb a:hover,.ppb-crumb [aria-current=page]{color:#fff}
+.ppb-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0 0 32px;border-top:1px solid #ffffff25;border-bottom:1px solid #ffffff25}
+.ppb-facts div{padding:18px 18px 18px 0}
+.ppb-facts div+div{padding-left:18px;border-left:1px solid #ffffff25}
+.ppb-facts dt{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#9a9ea0;margin-bottom:8px}
+.ppb-facts dd{margin:0;font-family:var(--display);font-size:clamp(32px,3vw,48px);letter-spacing:-.04em;font-weight:600;line-height:1}
+.ppb-facts dd span{display:block;margin-top:8px;font-family:var(--font);font-size:13px;letter-spacing:0;font-weight:450;color:#c5c7c8;line-height:1.45;max-width:16em}
+.ppb-hero .hero-assurance{max-width:560px;color:#a5aaa9}
+.ppb-jumps{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:28px;padding-top:22px;border-top:1px solid #ffffff20;font-size:13px;font-weight:650}
+.ppb-jumps a{color:#d0d2d3}
+.ppb-jumps a:hover{color:var(--orange)}
+.ppb-how,.ppb-counts,.ppb-trades,.ppb-terms{padding-top:96px;padding-bottom:96px}
+.ppb-price,.ppb-towns{background:#e9eae6;padding-top:96px;padding-bottom:96px}
+.ppb-steps{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:56px 0 0;padding:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ppb-steps li{padding:28px 28px 32px 0}
+.ppb-steps li+li{border-left:1px solid var(--line);padding-left:28px}
+.ppb-steps li>span{display:block;color:var(--orange);font-size:13px;letter-spacing:1px;margin-bottom:18px}
+.ppb-steps h3,.ppb-count-grid h3,.ppb-trade-grid h3,.ppb-town-grid h3{font-size:24px;letter-spacing:-.04em;margin-bottom:12px}
+.ppb-steps p,.ppb-count-grid p,.ppb-trade-grid p,.ppb-town-grid p{color:#5c6062;margin:0}
+.ppb-price-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;margin-top:48px;align-items:stretch}
+.ppb-price .price-card{display:flex;flex-direction:column}
+.ppb-price .price-card h3{font-size:32px;letter-spacing:-.04em;margin:0 0 8px}
+.ppb-price .price-card .button{margin-top:auto}
+.ppb-calc{background:#fff;border:1px solid #dedfda;border-radius:5px;padding:36px;box-shadow:0 20px 45px #151a1010}
+.ppb-calc fieldset{border:0;margin:0;padding:0}
+.ppb-calc legend{font-size:12px;font-weight:650;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:14px}
+.ppb-cap-toggle{display:grid;gap:10px}
+.ppb-cap-toggle button{text-align:left;background:transparent;color:var(--ink);border:1px solid #c8cbc7;border-radius:3px;padding:14px 16px;cursor:pointer;font-size:15px}
+.ppb-cap-toggle button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.ppb-calc label{display:block;margin:26px 0 10px;font-weight:650;font-size:14px}
+.ppb-count-row{display:grid;gap:14px}
+.ppb-calc input[type=number]{width:148px;font:600 28px var(--display);padding:8px 12px;border:1px solid #cbd1cc;border-radius:3px;background:#f7f8f6;color:var(--ink)}
+.ppb-calc input[type=range]{width:100%;accent-color:var(--orange)}
+.ppb-calc-kicker{margin:28px 0 0;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;font-weight:650;color:#686e67}
+.ppb-calc-total{font-family:var(--display);font-size:clamp(64px,7vw,96px);line-height:.95;letter-spacing:-.06em;font-weight:600;margin:6px 0 12px}
+.ppb-calc-detail,.ppb-math-note{color:#5c6062;margin:0;max-width:46em}
+.ppb-math-note{margin-top:22px}
+.ppb-price .pricing-table{min-width:720px}
+.ppb-count-grid,.ppb-trade-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 32px;margin-top:48px}
+.ppb-town-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 32px;list-style:none;padding:0;margin:48px 0 0}
+.ppb-count-grid article,.ppb-trade-grid article,.ppb-town-grid li{border-top:2px solid var(--ink);padding-top:16px}
+.ppb-town-note{margin:28px 0 0;max-width:680px;color:#3c4144}
+.ppb-town-note a,.ppb-faq-phone a{text-decoration:underline;text-underline-offset:3px}
+.ppb-terms{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
+.ppb-term-list{list-style:none;padding:0;margin:28px 0 0}
+.ppb-term-list li{border-bottom:1px solid var(--line);padding:14px 0}
+.ppb-pilot{background:var(--ink);color:#fff;padding:36px;border-radius:5px}
+.ppb-pilot .eyebrow{color:var(--orange)}
+.ppb-pilot-count{font-family:var(--display);font-size:120px;line-height:.85;letter-spacing:-.06em;font-weight:600;margin:0}
+.ppb-pilot h2{font-size:36px;line-height:1.1;margin:8px 0 16px;color:#fff}
+.ppb-pilot p{color:#c5c7c8}
+.ppb-pilot .button{margin-top:12px}
+.ppb-faq-phone{color:#5c6062;margin-top:18px}
+.ppb-related{padding-top:64px;padding-bottom:72px;border-top:1px solid var(--line)}
+.ppb-related ul{display:flex;flex-wrap:wrap;gap:14px 28px;list-style:none;padding:8px 0 0;margin:0;font-weight:650}
+.ppb-related a{border-bottom:1px solid currentColor;padding-bottom:3px}
+.ppb-related a:hover{color:var(--orange)}
+.ppb-home{padding-top:80px;padding-bottom:80px;background:var(--paper)}
+.ppb-home h2{max-width:16em;font-size:clamp(32px,3.6vw,52px)}
+.ppb-home>p{max-width:680px;color:#5c6062;margin:22px 0 28px}
+#how,#price-math,#counts,#trades,#towns,#terms,#faq{scroll-margin-top:24px}
+@media(max-width:980px){
+.header{height:auto;min-height:80px;flex-wrap:wrap;row-gap:10px;padding-top:12px;padding-bottom:12px}
+.header nav{order:3;width:100%;flex-wrap:wrap;justify-content:flex-start;gap:8px 16px}
+.ppb-facts,.ppb-count-grid,.ppb-trade-grid,.ppb-town-grid{grid-template-columns:1fr 1fr}
+.ppb-steps{grid-template-columns:1fr}
+.ppb-steps li+li{border-left:0;padding-left:0;border-top:1px solid var(--line)}
+.ppb-price-grid,.ppb-terms{grid-template-columns:1fr}
+.ppb-facts div:nth-child(odd){border-left:0;padding-left:0}
+.ppb-facts div:nth-child(n+3){border-top:1px solid #ffffff25}
+}
+@media(max-width:760px){
+.ppb-header-call{display:none}
+.header nav{justify-content:flex-start;gap:8px 14px}
+.ppb-hero{padding-top:28px;padding-bottom:36px}
+.ppb-hero h1{font-size:clamp(32px,8.4vw,42px)}
+.ppb-lede{font-size:16px}
+.ppb-facts,.ppb-count-grid,.ppb-trade-grid,.ppb-town-grid{grid-template-columns:1fr}
+.ppb-facts div+div{border-left:0;padding-left:0;border-top:1px solid #ffffff25}
+.ppb-how,.ppb-counts,.ppb-trades,.ppb-terms,.ppb-price,.ppb-towns{padding-top:60px;padding-bottom:60px}
+.ppb-calc{padding:22px}
+.ppb-calc-total{font-size:72px}
+.ppb-pilot-count{font-size:96px}
+.ppb-home{padding-top:56px;padding-bottom:56px}
+.ppb-home h2{font-size:32px}
+.ppb-hero .hero-actions{align-items:flex-start}
+}

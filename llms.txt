@@ -1,6 +1,6 @@
 # NoFluff Marketing
 
-NoFluff Marketing LLC serves HVAC, roofing, plumbing, dental, and local trades in North Texas. We sell GHL systems for local operators, not ad campaigns. Our connected stack is built in GoHighLevel. A managed website is one product in that stack.
+NoFluff Marketing LLC serves HVAC, roofing, plumbing, dental, and local trades in North Texas. We build connected systems for local operators, not ad campaigns. A managed website is one product in that system.
 
 ## Products
 - CallShield: Never miss another call. https://www.nofluffmarketing.io/callshield
@@ -10,6 +10,7 @@ NoFluff Marketing LLC serves HVAC, roofing, plumbing, dental, and local trades i
 - Nurture Autopilot: Old leads become new jobs. https://www.nofluffmarketing.io/nurture
 - Managed Website: A better front door, with the upkeep handled. https://www.nofluffmarketing.io/#services
 - Run it yourself: Our software, your business. https://www.nofluffmarketing.io/pricing
+- Pay Per Booking Front Desk: Calls answered and jobs booked. $0 setup, $49/month + $29 per confirmed booking, $499/month cap ($999 roofing and water/fire restoration), bookings past the cap are free. No contract; cancel effective end of billing month. 48-hour dispute window. 5 pilot spots. Not for lawn/landscaping. Serving Celina, Prosper, McKinney, Frisco, Anna, Melissa, Little Elm, Aubrey and Denton, TX (US-380 corridor); more North Texas areas planned. https://www.nofluffmarketing.io/pay-per-booking
 
 ## Prices
 Managed Website: $297 one-time build plus $97/month managed service.
