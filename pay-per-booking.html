@@ -89,7 +89,7 @@
           {"@type": "UnitPriceSpecification", "price": 0, "priceCurrency": "USD", "name": "Setup"},
           {"@type": "UnitPriceSpecification", "price": 49, "priceCurrency": "USD", "unitText": "MONTH", "name": "Monthly base"},
           {"@type": "UnitPriceSpecification", "price": 29, "priceCurrency": "USD", "unitText": "confirmed booking", "name": "Per confirmed booking"},
-          {"@type": "PriceSpecification", "maxPrice": 499, "priceCurrency": "USD", "name": "Monthly cap (999 for roofing and water/fire restoration)"}
+          {"@type": "PriceSpecification", "maxPrice": 499, "priceCurrency": "USD", "name": "Monthly cap, all trades"}
         ]
       }
     },
@@ -114,8 +114,8 @@
         },
         {
           "@type": "Question",
-          "name": "How does the monthly cap work? Why is roofing or restoration $999?",
-          "acceptedAnswer": {"@type": "Answer", "text": "You pay $49 plus $29 per confirmed booking until the month reaches $499. Roofing and water/fire restoration use a $999 cap. The booking price stays $29. Only the cap is higher."}
+          "name": "How does the monthly cap work?",
+          "acceptedAnswer": {"@type": "Answer", "text": "You pay $49 plus $29 per confirmed booking until the month reaches $499. The $499 cap applies to every trade, roofing and water/fire restoration included."}
         },
         {
           "@type": "Question",
@@ -189,7 +189,7 @@
 <div><dt>Setup</dt><dd><span data-count="0" data-prefix="$">$0</span></dd></div>
 <div><dt>Monthly base</dt><dd><span data-count="49" data-prefix="$">$49</span></dd></div>
 <div><dt>Per confirmed booking</dt><dd><span data-count="29" data-prefix="$">$29</span></dd></div>
-<div><dt>Monthly cap</dt><dd><span data-count="499" data-prefix="$">$499</span> <span>$999 for roofing and water/fire restoration</span></dd></div>
+<div><dt>Monthly cap</dt><dd><span data-count="499" data-prefix="$">$499</span> <span>All trades, roofing and water/fire restoration included</span></dd></div>
 </dl>
 <div class="hero-actions">
 <a class="button" href="tel:+19403945656">Call (940) 394-5656</a>
@@ -237,7 +237,7 @@
 <li>$49 a month</li>
 <li>$29 per confirmed booking</li>
 <li>$499 monthly cap</li>
-<li>$999 cap for roofing and water/fire restoration</li>
+<li>$499 cap for every trade, roofing and water/fire restoration included</li>
 <li>Bookings past the cap are free</li>
 <li>No contract</li>
 </ul>
@@ -276,22 +276,21 @@
 <tr>
 <th scope="col">Confirmed bookings</th>
 <th scope="col">$49 + $29 × bookings</th>
-<th scope="col">Most trades, cap $499</th>
-<th scope="col">Roofing and water/fire restoration, cap $999</th>
+<th scope="col">All trades, cap $499</th>
 </tr>
 </thead>
 <tbody>
-<tr><th scope="row">5</th><td>$194</td><td>$194</td><td>$194</td></tr>
-<tr><th scope="row">10</th><td>$339</td><td>$339</td><td>$339</td></tr>
-<tr><th scope="row">15</th><td>$484</td><td>$484</td><td>$484</td></tr>
-<tr><th scope="row">16</th><td>$513</td><td>$499</td><td>$513</td></tr>
-<tr><th scope="row">25</th><td>$774</td><td>$499</td><td>$774</td></tr>
-<tr><th scope="row">33</th><td>$1,006</td><td>$499</td><td>$999</td></tr>
-<tr><th scope="row">40</th><td>$1,209</td><td>$499</td><td>$999</td></tr>
+<tr><th scope="row">5</th><td>$194</td><td>$194</td></tr>
+<tr><th scope="row">10</th><td>$339</td><td>$339</td></tr>
+<tr><th scope="row">15</th><td>$484</td><td>$484</td></tr>
+<tr><th scope="row">16</th><td>$513</td><td>$499</td></tr>
+<tr><th scope="row">25</th><td>$774</td><td>$499</td></tr>
+<tr><th scope="row">33</th><td>$1,006</td><td>$499</td></tr>
+<tr><th scope="row">40</th><td>$1,209</td><td>$499</td></tr>
 </tbody>
 </table>
 </div>
-<p class="ppb-math-note">Most trades reach the $499 cap at 16 confirmed bookings. Roofing and water/fire restoration reach the $999 cap at 33 confirmed bookings. Further bookings that month are free.</p>
+<p class="ppb-math-note">All trades, roofing and water/fire restoration included, reach the $499 cap at 16 confirmed bookings. Further bookings that month are free.</p>
 </section>
 
 <section id="why" class="ppb-why section-wrap ppb-reveal">
@@ -365,7 +364,7 @@
 </tr>
 <tr>
 <th scope="row">Monthly cap</th>
-<td id="ppb-compare-cap">$499. Roofing and water/fire restoration use $999.</td>
+<td id="ppb-compare-cap">$499 for every trade.</td>
 <td>No cap</td>
 <td>No cap on the published tiers. The custom Unlimited plan has no public price.</td>
 <td>Not stated</td>
@@ -439,9 +438,9 @@
 <article><h3>HVAC</h3><p>Repair, maintenance, and estimate calls are answered and booked onto your calendar. HVAC companies can also use <a href="https://thehvacfrontdesk.com" rel="noopener">The HVAC Front Desk</a>, the HVAC-specific brand.</p></article>
 <article><h3>Plumbing</h3><p>Leak, drain, and water-heater calls are answered and booked onto your calendar.</p></article>
 <article><h3>Electrical</h3><p>Service, panel, and outage calls are answered and booked onto your calendar.</p></article>
-<article><h3>Roofing</h3><p>Inspection and repair calls are answered and booked onto your calendar. Roofing uses the $999 monthly cap.</p></article>
+<article><h3>Roofing</h3><p>Inspection and repair calls are answered and booked onto your calendar. Roofing uses the $499 monthly cap.</p></article>
 <article><h3>Garage door</h3><p>Repair and replacement calls are answered and booked onto your calendar.</p></article>
-<article><h3>Water and fire restoration</h3><p>Emergency calls are answered and booked onto your calendar. Water and fire restoration uses the $999 monthly cap.</p></article>
+<article><h3>Water and fire restoration</h3><p>Emergency calls are answered and booked onto your calendar. Water and fire restoration uses the $499 monthly cap.</p></article>
 <article class="ppb-trade-other"><h3>Other home trades</h3><p>Foundation repair and similar home-service trades can use the same front desk. Not for lawn or landscaping.</p></article>
 </div>
 </section>
@@ -474,7 +473,7 @@
 <li>Setup is $0.</li>
 <li>The monthly base is $49.</li>
 <li>Each confirmed booking is $29.</li>
-<li>The monthly cap is $499, or $999 for roofing and water/fire restoration.</li>
+<li>The monthly cap is $499 for every trade.</li>
 <li>Bookings past the cap are free.</li>
 <li>There is no contract.</li>
 <li>You can cancel anytime. Cancellation takes effect at the end of the current billing month.</li>
@@ -575,8 +574,8 @@
 <p>No. Setup is $0 and there is no contract. You can cancel anytime, effective at the end of the current billing month.</p>
 </details>
 <details>
-<summary>How does the monthly cap work? Why is roofing or restoration $999?</summary>
-<p>You pay $49 plus $29 per confirmed booking until the month reaches $499. Roofing and water/fire restoration use a $999 cap. The booking price stays $29. Only the cap is higher.</p>
+<summary>How does the monthly cap work?</summary>
+<p>You pay $49 plus $29 per confirmed booking until the month reaches $499. The $499 cap applies to every trade, roofing and water/fire restoration included.</p>
 </details>
 <details>
 <summary>What happens after I hit the cap?</summary>
@@ -648,9 +647,9 @@
     hvac: { label: 'HVAC', cap: 499, qualify: 'HVAC', example: 'An HVAC company in McKinney. Repair, maintenance, and estimate calls that become appointments are $29 each, on top of the $49 base, until the $499 cap.' },
     plumbing: { label: 'Plumbing', cap: 499, qualify: 'Plumbing', example: 'A plumbing company in Prosper. Leak, drain, and water-heater calls that become appointments are $29 each, on top of the $49 base, until the $499 cap.' },
     electrical: { label: 'Electrical', cap: 499, qualify: 'Electrical', example: 'An electrical company in Frisco. Service, panel, and outage calls that become appointments are $29 each, on top of the $49 base, until the $499 cap.' },
-    roofing: { label: 'Roofing', cap: 999, qualify: 'Roofing', example: 'A roofing company in Celina. Inspection and repair calls that become appointments are $29 each, on top of the $49 base, until the $999 cap.' },
+    roofing: { label: 'Roofing', cap: 499, qualify: 'Roofing', example: 'A roofing company in Celina. Inspection and repair calls that become appointments are $29 each, on top of the $49 base, until the $499 cap.' },
     garage: { label: 'Garage door', cap: 499, qualify: 'Garage door', example: 'A garage door company in Anna. Repair and replacement calls that become appointments are $29 each, on top of the $49 base, until the $499 cap.' },
-    restoration: { label: 'Restoration', cap: 999, qualify: 'Restoration', example: 'A water and fire restoration company in Denton. Emergency calls that become appointments are $29 each, on top of the $49 base, until the $999 cap.' }
+    restoration: { label: 'Restoration', cap: 499, qualify: 'Restoration', example: 'A water and fire restoration company in Denton. Emergency calls that become appointments are $29 each, on top of the $49 base, until the $499 cap.' }
   };
   var tradeKey = 'hvac';
   var form = document.getElementById('ppb-calc');
@@ -698,7 +697,7 @@
     var riv = rivvet(compareN);
     var oursNote = compareN + ' confirmed ' + (compareN === 1 ? 'booking' : 'bookings') + (ours < 49 + 29 * compareN ? '. The ' + money(cap) + ' cap applies.' : '. Under the ' + money(cap) + ' cap.');
     var capCell = document.getElementById('ppb-compare-cap');
-    if (capCell) capCell.textContent = money(cap) + (cap === 999 ? ' for this trade.' : '. Roofing and water/fire restoration use $999.');
+    if (capCell) capCell.textContent = money(cap) + ' for every trade.';
     var map = { 'ppb-cost-ours': money(ours), 'ppb-cost-narlo': money(narlo), 'ppb-cost-rivvet': money(riv), 'ppb-row-ours': money(ours), 'ppb-row-narlo': money(narlo), 'ppb-row-rivvet': money(riv) };
     Object.keys(map).forEach(function (id) {
       var node = document.getElementById(id);
