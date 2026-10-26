@@ -32,7 +32,7 @@ const url=new URL('https://api.nofluffgroup.com/widget/form/KdjIMQjUWpGuPdiNp9ma
 // This existing widget custom field is the persisted routing input. A native
 // form-submitted workflow must branch on PRODUCT_INTEREST to apply CRM tags.
 url.searchParams.set('nfm_website_inquiry','PRODUCT_INTEREST: '+need+'\n'+requests[need].message+(plan?'\nPlan: '+plan:'')+'\nTiming: '+timing[when]+'.\n\nWebsite / service area / what I want to improve: ');
-url.searchParams.set('source','NoFluff Marketing website — '+need);
+url.searchParams.set('source','NoFluff Marketing website, '+need);
 const incoming=new URLSearchParams(location.search);for(const key of ['utm_source','utm_medium','utm_campaign','utm_content','utm_term']){const value=incoming.get(key);if(value&&/^[a-zA-Z0-9._~ -]{1,120}$/.test(value))url.searchParams.set(key,value);}
 // Preserve entered widget details when reopening the same request.
 if(loadedRequest!==url.href){document.getElementById('lead-frame').src=url.href;loadedRequest=url.href;}
