@@ -214,7 +214,7 @@
 <h2>Answered.<br><span class="muted">Then booked.</span></h2>
 <p>A done-for-you front desk for the call that comes in while your crew is on a job.</p>
 </div>
-<!-- TODO: homeowner confirms by text — pending -->
+<!-- TODO: homeowner confirms by text. Pending -->
 <ol class="ppb-steps">
 <li><span>01</span><h3>We answer the call.</h3><p>Our system answers with your services, your hours, and your service area.</p></li>
 <li><span>02</span><h3>We book the job.</h3><p>When the caller wants the work, the appointment goes on your calendar.</p></li>
@@ -314,12 +314,12 @@
 </article>
 <article>
 <h3>Narlo</h3>
-<p class="ppb-cost" id="ppb-cost-narlo">$400</p>
+<p class="ppb-cost" id="ppb-cost-compare-a">$400</p>
 <p>$40 per booked job. No cap.</p>
 </article>
 <article>
 <h3>Rivvet</h3>
-<p class="ppb-cost" id="ppb-cost-rivvet">$1,000</p>
+<p class="ppb-cost" id="ppb-cost-compare-b">$1,000</p>
 <p>$500 a month, then $50, $40, or $30 per job.</p>
 </article>
 <article>
@@ -386,8 +386,8 @@
 <tr>
 <th scope="row">This many bookings</th>
 <td id="ppb-row-ours">$339</td>
-<td id="ppb-row-narlo">$400</td>
-<td id="ppb-row-rivvet">$1,000</td>
+<td id="ppb-row-compare-a">$400</td>
+<td id="ppb-row-compare-b">$1,000</td>
 <td>No published per-booking price</td>
 </tr>
 </tbody>
@@ -663,7 +663,7 @@
   var picks = document.querySelectorAll('[data-trade]');
 
   function money(n) { return '$' + n.toLocaleString('en-US'); }
-  function rivvet(n) {
+  function compareBCost(n) {
     return 500 + Math.min(n, 10) * 50 + Math.min(Math.max(n - 10, 0), 15) * 40 + Math.max(n - 25, 0) * 30;
   }
   function clamp(value, max) {
@@ -693,12 +693,12 @@
     detail.textContent = line;
     if (example) example.textContent = trade.example;
     var ours = Math.min(49 + 29 * compareN, cap);
-    var narlo = 40 * compareN;
-    var riv = rivvet(compareN);
+    var compareA = 40 * compareN;
+    var compareB = compareBCost(compareN);
     var oursNote = compareN + ' confirmed ' + (compareN === 1 ? 'booking' : 'bookings') + (ours < 49 + 29 * compareN ? '. The ' + money(cap) + ' cap applies.' : '. Under the ' + money(cap) + ' cap.');
     var capCell = document.getElementById('ppb-compare-cap');
     if (capCell) capCell.textContent = money(cap) + ' for every trade.';
-    var map = { 'ppb-cost-ours': money(ours), 'ppb-cost-narlo': money(narlo), 'ppb-cost-rivvet': money(riv), 'ppb-row-ours': money(ours), 'ppb-row-narlo': money(narlo), 'ppb-row-rivvet': money(riv) };
+    var map = { 'ppb-cost-ours': money(ours), 'ppb-cost-compare-a': money(compareA), 'ppb-cost-compare-b': money(compareB), 'ppb-row-ours': money(ours), 'ppb-row-compare-a': money(compareA), 'ppb-row-compare-b': money(compareB) };
     Object.keys(map).forEach(function (id) {
       var node = document.getElementById(id);
       if (node) node.textContent = map[id];
@@ -839,11 +839,11 @@
       phone: phone,
       sQy44nMJhggAlYzke4N1: message,
       nfm_website_inquiry: message,
-      source: 'NoFluff Marketing website — pay-per-booking',
+      source: 'NoFluff Marketing website, pay-per-booking',
       medium: 'form',
       mediumId: formId,
       Timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-      eventData: { source: 'NoFluff Marketing website — pay-per-booking', page: { url: location.href, title: document.title }, timestamp: Date.now() }
+      eventData: { source: 'NoFluff Marketing website, pay-per-booking', page: { url: location.href, title: document.title }, timestamp: Date.now() }
     };
     var incoming = new URLSearchParams(location.search);
     ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (key) {
