@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "test": "node --test test/lead-email.test.js test/routing.test.js test/nfm-untouched.test.js && node scripts/scan-payperbooked.js"
+    "test": "node --test test/lead-email.test.js test/routing.test.js test/nfm-untouched.test.js test/payperbooked-brand.test.js && node scripts/scan-payperbooked.js"
   },
   "dependencies": {
     "@vercel/functions": "^2.2.13"

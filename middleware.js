@@ -1,5 +1,3 @@
-import { rewrite } from '@vercel/functions';
-
 function payperbookedDestination(host, pathname) {
   const name = String(host || '').split(':')[0].toLowerCase();
   if (name !== 'payperbooked.com' && name !== 'www.payperbooked.com') return '';
@@ -21,5 +19,6 @@ export default function middleware(request) {
   const destination = payperbookedDestination(request.headers.get('host'), url.pathname);
   if (!destination) return;
   url.pathname = destination;
-  return rewrite(url);
+  // Same rewrite header as @vercel/functions, without pulling cache, database, and OIDC into this edge bundle.
+  return new Response(null, { headers: { 'x-middleware-rewrite': url.toString() } });
 }
