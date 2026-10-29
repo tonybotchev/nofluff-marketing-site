@@ -6,13 +6,37 @@
       "permanent": false
     },
     {
+      "source": "/pay-per-booking",
+      "has": [{ "type": "host", "value": "nofluffmarketing.io" }],
+      "destination": "https://payperbooked.com",
+      "permanent": true
+    },
+    {
+      "source": "/pay-per-booking",
+      "has": [{ "type": "host", "value": "www.nofluffmarketing.io" }],
+      "destination": "https://payperbooked.com",
+      "permanent": true
+    },
+    {
       "source": "/callshield",
-      "destination": "/pay-per-booking",
+      "destination": "https://payperbooked.com",
       "permanent": true
     },
     {
       "source": "/callshield.html",
-      "destination": "/pay-per-booking",
+      "destination": "https://payperbooked.com",
+      "permanent": true
+    },
+    {
+      "source": "/payperbooked/:path*",
+      "has": [{ "type": "host", "value": "nofluffmarketing.io" }],
+      "destination": "https://payperbooked.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/payperbooked/:path*",
+      "has": [{ "type": "host", "value": "www.nofluffmarketing.io" }],
+      "destination": "https://payperbooked.com/:path*",
       "permanent": true
     }
   ],
