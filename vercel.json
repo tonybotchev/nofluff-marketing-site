@@ -40,5 +40,45 @@
       "permanent": true
     }
   ],
+  "headers": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "payperbooked.com" }],
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate, s-maxage=86400, stale-while-revalidate=604800" }]
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "www.payperbooked.com" }],
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate, s-maxage=86400, stale-while-revalidate=604800" }]
+    },
+    {
+      "source": "/pricing",
+      "has": [{ "type": "host", "value": "payperbooked.com" }],
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate, s-maxage=86400, stale-while-revalidate=604800" }]
+    },
+    {
+      "source": "/pricing",
+      "has": [{ "type": "host", "value": "www.payperbooked.com" }],
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate, s-maxage=86400, stale-while-revalidate=604800" }]
+    },
+    {
+      "source": "/booking",
+      "has": [{ "type": "host", "value": "payperbooked.com" }],
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate, s-maxage=86400, stale-while-revalidate=604800" }]
+    },
+    {
+      "source": "/booking",
+      "has": [{ "type": "host", "value": "www.payperbooked.com" }],
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate, s-maxage=86400, stale-while-revalidate=604800" }]
+    },
+    {
+      "source": "/pay-per-booking",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate, s-maxage=86400, stale-while-revalidate=604800" }]
+    },
+    {
+      "source": "/payperbooked/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate, s-maxage=86400, stale-while-revalidate=604800" }]
+    }
+  ],
   "cleanUrls": true
 }

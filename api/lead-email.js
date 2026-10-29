@@ -66,7 +66,7 @@ module.exports = async function handler(req, res) {
   }
 
   const text = [
-    "NoFluff Front Desk inquiry",
+    "PayPerBooked inquiry",
     "Name: " + name,
     "Phone: " + phone,
     "Email: " + email,
@@ -105,7 +105,7 @@ module.exports = async function handler(req, res) {
       },
       body: JSON.stringify({
         message: {
-          subject: "NoFluff Front Desk inquiry from " + name,
+          subject: "PayPerBooked inquiry from " + name,
           body: { contentType: "Text", content: text },
           toRecipients: [{ emailAddress: { address: mailTo } }],
           replyTo: [{ emailAddress: { address: email, name: name } }]

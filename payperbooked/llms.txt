@@ -1,6 +1,6 @@
-# NoFluff Front Desk
+# PayPerBooked
 
-Pay-per-booking front desk for home-service trades in Celina, Prosper, McKinney, Frisco, Anna, Melissa, Little Elm, Aubrey and Denton, TX.
+Pay per booking answering service for HVAC and other home-service trades in North DFW: Celina, Prosper, McKinney, Frisco, Anna, Melissa, Little Elm, Aubrey and Denton, TX, along the US-380 corridor.
 
 ## Offer
 - $0 setup
@@ -20,5 +20,5 @@ Pay-per-booking front desk for home-service trades in Celina, Prosper, McKinney,
 - https://payperbooked.com/booking
 
 ## Contact
-info@nofluffmarketing.io
+[placeholder: no payperbooked.com contact email is in this repo]
 (940) 394-5656

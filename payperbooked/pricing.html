@@ -3,39 +3,78 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NoFluff Front Desk pricing | $49/mo + $29 per booking</title>
-<meta name="description" content="NoFluff Front Desk is $0 setup, $49 a month, and $29 per confirmed booking, with a $499 monthly cap for every trade. No contract. Cancel anytime, effective at the end of the current billing month.">
+<title>Pay Per Booking Pricing for HVAC | North DFW</title>
+<meta name="description" content="HVAC and every trade in North DFW: $0 setup, $49 a month, $29 per confirmed booking, $499 cap. No contract. McKinney, Frisco, Prosper, Celina.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%23ff5b24'/%3E%3Cpath d='M10 29V11h5l10 12V11h5v18h-5L15 17v12z' fill='%23111214'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/payperbooked/base.css">
 <link rel="canonical" href="https://payperbooked.com/pricing">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="NoFluff Marketing">
+<meta property="og:site_name" content="PayPerBooked">
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="NoFluff Front Desk pricing | $49/mo + $29 per booking">
-<meta property="og:description" content="$0 setup, $49 a month, $29 per confirmed booking, $499 monthly cap for every trade. No contract.">
+<meta property="og:title" content="Pay Per Booking Pricing for HVAC | North DFW">
+<meta property="og:description" content="HVAC and every trade in North DFW: $0 setup, $49 a month, $29 per confirmed booking, $499 monthly cap. No contract.">
 <meta property="og:url" content="https://payperbooked.com/pricing">
-<meta property="og:image" content="https://payperbooked.com/hero.png">
-<meta property="og:image:alt" content="NoFluff Marketing black and orange connected-system artwork">
+<meta property="og:image" content="https://payperbooked.com/payperbooked/og.png">
+<meta property="og:image:alt" content="PayPerBooked, pay per booking answering for HVAC and home trades in North DFW">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="NoFluff Front Desk pricing | $49/mo + $29 per booking">
-<meta name="twitter:description" content="$0 setup, $49 a month, $29 per confirmed booking, $499 monthly cap for every trade. No contract.">
-<meta name="twitter:image" content="https://payperbooked.com/hero.png">
+<meta name="twitter:title" content="Pay Per Booking Pricing for HVAC | North DFW">
+<meta name="twitter:description" content="HVAC and every trade in North DFW: $0 setup, $49 a month, $29 per confirmed booking, $499 monthly cap. No contract.">
+<meta name="twitter:image" content="https://payperbooked.com/payperbooked/og.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Offer",
-  "name": "NoFluff Front Desk",
-  "url": "https://payperbooked.com/pricing",
-  "priceCurrency": "USD",
-  "availability": "https://schema.org/LimitedAvailability",
-  "priceSpecification": [
-    {"@type": "UnitPriceSpecification", "price": 0, "priceCurrency": "USD", "name": "Setup"},
-    {"@type": "UnitPriceSpecification", "price": 49, "priceCurrency": "USD", "unitText": "MONTH", "name": "Monthly base"},
-    {"@type": "UnitPriceSpecification", "price": 29, "priceCurrency": "USD", "unitText": "confirmed booking", "name": "Per confirmed booking"},
-    {"@type": "PriceSpecification", "maxPrice": 499, "priceCurrency": "USD", "name": "Monthly cap, all trades"}
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://payperbooked.com/#organization",
+      "name": "PayPerBooked",
+      "url": "https://payperbooked.com/",
+      "telephone": "+1-940-394-5656"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://payperbooked.com/pricing#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://payperbooked.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://payperbooked.com/pricing"}
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://payperbooked.com/#service",
+      "name": "Pay per booking answering service",
+      "serviceType": "Pay per booking call answering and appointment booking for HVAC and home-service trades",
+      "url": "https://payperbooked.com/",
+      "provider": { "@id": "https://payperbooked.com/#organization" },
+      "areaServed": [
+        {"@type": "City", "name": "McKinney"},
+        {"@type": "City", "name": "Frisco"},
+        {"@type": "City", "name": "Prosper"},
+        {"@type": "City", "name": "Celina"},
+        {"@type": "City", "name": "Anna"},
+        {"@type": "City", "name": "Melissa"},
+        {"@type": "City", "name": "Little Elm"},
+        {"@type": "City", "name": "Aubrey"},
+        {"@type": "City", "name": "Denton"},
+        {"@type": "AdministrativeArea", "name": "North DFW, US-380 corridor"}
+      ],
+      "offers": {
+        "@type": "Offer",
+        "name": "PayPerBooked pricing",
+        "url": "https://payperbooked.com/pricing",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/LimitedAvailability",
+        "priceSpecification": [
+          {"@type": "UnitPriceSpecification", "price": 0, "priceCurrency": "USD", "name": "Setup"},
+          {"@type": "UnitPriceSpecification", "price": 49, "priceCurrency": "USD", "unitText": "MONTH", "name": "Monthly base"},
+          {"@type": "UnitPriceSpecification", "price": 29, "priceCurrency": "USD", "unitText": "confirmed booking", "name": "Per confirmed booking"},
+          {"@type": "PriceSpecification", "maxPrice": 499, "priceCurrency": "USD", "name": "Monthly cap, all trades"}
+        ]
+      }
+    }
   ]
 }
 </script>
@@ -43,12 +82,12 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="header">
-<a class="wordmark" href="/" aria-label="NoFluff Front Desk home"><img class="brand-image" src="/nofluff-logo-dark.png" alt="NoFluff Marketing" width="2172" height="724"></a>
+<a class="wordmark ppb-wordmark" href="/" aria-label="PayPerBooked home"><span class="ppb-mark" aria-hidden="true">P</span><span class="ppb-name">PayPerBooked</span></a>
 <nav aria-label="Main navigation">
 <a href="/">Home</a>
 <a href="/pricing" aria-current="page">Pricing</a>
 <a href="/booking">Booking</a>
-<a href="/pay-per-booking#faq">FAQ</a>
+<a href="/#faq">FAQ</a>
 </nav>
 <a class="button small ppb-header-call" href="tel:+19403945656">Call (940) 394-5656</a>
 </header>
@@ -60,9 +99,9 @@
 <li aria-current="page">Pricing</li>
 </ol>
 </nav>
-<p class="eyebrow"><span class="short-line"></span> NOFLUFF FRONT DESK</p>
-<h1>One price for every trade.</h1>
-<p class="ppb-lede">$0 setup. $49 a month. $29 per confirmed booking. The bill stops at $499 for the month, for every trade, roofing and water and fire restoration included. No contract. Cancel anytime, effective at the end of the current billing month.</p>
+<p class="eyebrow"><span class="short-line"></span> PAYPERBOOKED / NORTH DFW</p>
+<h1>Pay per booking pricing for HVAC and every trade in North DFW.</h1>
+<p class="ppb-lede">$0 setup. $49 a month. $29 per confirmed booking. The bill stops at $499 for the month, for HVAC and every other trade, roofing and water and fire restoration included. No contract. Cancel anytime, effective at the end of the current billing month. Read how the <a href="/#hvac">HVAC answering service</a> works, or <a href="/booking">book a pilot spot</a>.</p>
 <dl class="ppb-facts">
 <div><dt>Setup</dt><dd><span data-count="0" data-prefix="$">$0</span></dd></div>
 <div><dt>Monthly base</dt><dd><span data-count="49" data-prefix="$">$49</span></dd></div>
@@ -79,7 +118,7 @@
 <section class="ppb-price section-wrap">
 <div class="section-heading">
 <p class="eyebrow">THE MONTHLY MATH</p>
-<h2>A base, a booking, and a ceiling.</h2>
+<h2>$49 a month, $29 a booking, and a $499 ceiling.</h2>
 <p>$49 plus $29 for each confirmed booking. You pay the lower of that total and $499. Bookings past the cap are free for the rest of that month.</p>
 </div>
 <div class="ppb-price-grid">
@@ -149,7 +188,7 @@
 <section class="ppb-towns section-wrap">
 <div class="section-heading">
 <p class="eyebrow">WHERE</p>
-<h2>Nine towns on the US-380 corridor.</h2>
+<h2>North DFW towns on the US-380 corridor.</h2>
 <p>These nine only. More North Texas areas are coming. No date is set.</p>
 </div>
 <ul class="ppb-town-grid">
@@ -184,6 +223,17 @@
 </div>
 </section>
 
+<section class="ppb-related section-wrap" aria-labelledby="ppb-related-title">
+<p class="eyebrow">RELATED</p>
+<h2 id="ppb-related-title">Related pages</h2>
+<ul>
+<li><a href="/#hvac">HVAC pay per booking answering in North DFW</a></li>
+<li><a href="/#towns">Towns on the US-380 corridor</a></li>
+<li><a href="/booking">Book a North DFW pilot spot</a></li>
+<li><a href="/#faq">Pay per booking questions</a></li>
+</ul>
+</section>
+
 <section class="closing section-wrap">
 <p class="eyebrow">YOUR NEXT MOVE</p>
 <h2>Five spots.<br><span>One phone call.</span></h2>
@@ -195,17 +245,17 @@
 </main>
 <footer class="footer section-wrap">
 <div class="footer-top">
-<a class="wordmark" href="/" aria-label="NoFluff Front Desk home"><img class="brand-image" src="/nofluff-logo-dark.png" alt="NoFluff Marketing" width="2172" height="724"></a>
-<p>Built for the businesses<br>that make local work.</p>
-<div><a href="mailto:info@nofluffmarketing.io">info@nofluffmarketing.io ↗</a><a href="tel:+19403945656">(940) 394-5656</a></div>
+<a class="wordmark ppb-wordmark" href="/" aria-label="PayPerBooked home"><span class="ppb-mark" aria-hidden="true">P</span><span class="ppb-name">PayPerBooked</span></a>
+<p>Pay per booking answering<br>for North DFW trades.</p>
+<div><span class="ppb-email-placeholder">[placeholder: no payperbooked.com contact email is in this repo]</span><a href="tel:+19403945656">(940) 394-5656</a></div>
 </div>
 <div class="footer-bottom">
-<span>© <span id="year">2026</span> NoFluff Marketing LLC</span>
+<span>© <span id="year">2026</span> PayPerBooked</span>
 <span>Serving Celina, Prosper, McKinney, Frisco, Anna, Melissa, Little Elm, Aubrey and Denton</span>
 <a href="#main">Back to top ↑</a>
 </div>
 </footer>
 <div class="mobile-convert"><a href="tel:+19403945656">Call (940) 394-5656</a><a href="/booking">Qualify</a></div>
-<script src="/script.js"></script>
+<script src="/payperbooked/nav.js"></script>
 </body>
 </html>
