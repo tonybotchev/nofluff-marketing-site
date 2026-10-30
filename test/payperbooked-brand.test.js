@@ -38,7 +38,7 @@ test('payperbooked pages use PayPerBooked and drop NoFluff branding', () => {
     const text = read(file);
     assert.match(text, /HVAC/);
     assert.match(text, /North DFW/);
-    assert.equal(text.includes(placeholder), true, file);
+    assert.equal(text.includes(placeholder), false, file);
     assert.match(text, /og:site_name" content="PayPerBooked"/);
     assert.match(text, /© <span id="year">2026<\/span> PayPerBooked/);
     assert.match(text, /aria-label="PayPerBooked home"/);
