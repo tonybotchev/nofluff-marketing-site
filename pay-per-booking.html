@@ -188,10 +188,10 @@
 <h1>Pay per booking answering service for HVAC in North DFW.</h1>
 <p class="ppb-lede">Calls are answered and jobs are booked onto your calendar for HVAC companies in Celina, Prosper, McKinney, Frisco, Anna, Melissa, Little Elm, Aubrey, and Denton. The same desk covers plumbing, electrical, roofing, garage door, and water and fire restoration. $0 setup. $49/mo + $29 per confirmed booking. The cap is $499 for every trade. <a href="/pricing">See pricing</a> or <a href="/booking">request a pilot spot</a>.</p>
 <dl class="ppb-facts">
-<div><dt>Setup</dt><dd><span data-count="0" data-prefix="$">$0</span></dd></div>
-<div><dt>Monthly base</dt><dd><span data-count="49" data-prefix="$">$49</span></dd></div>
-<div><dt>Per confirmed booking</dt><dd><span data-count="29" data-prefix="$">$29</span></dd></div>
-<div><dt>Monthly cap</dt><dd><span data-count="499" data-prefix="$">$499</span> <span>All trades, roofing and water/fire restoration included</span></dd></div>
+<div><dt>Setup</dt><dd><span>$0</span></dd></div>
+<div><dt>Monthly base</dt><dd><span>$49</span></dd></div>
+<div><dt>Per confirmed booking</dt><dd><span>$29</span></dd></div>
+<div><dt>Monthly cap</dt><dd><span>$499</span> <span>All trades, roofing and water/fire restoration included</span></dd></div>
 </dl>
 <div class="hero-actions">
 <a class="button" href="tel:+19403945656">Call (940) 394-5656</a>
@@ -486,7 +486,8 @@
 <h2>See if your North DFW trade qualifies.</h2>
 <p>Five pilot spots are open along the US-380 corridor. Sending this does not hold a spot. We review it, then we call.</p>
 </div>
-<form id="ppb-qualify" novalidate>
+<noscript><p>To inquire, call <a href="tel:+19403945656">(940) 394-5656</a>. The online form requires JavaScript.</p></noscript>
+<form id="ppb-qualify" novalidate hidden>
 <p class="ppb-step-label" id="ppb-step-label" aria-live="polite">Step 1 of 4. Trade.</p>
 <fieldset data-step="1">
 <legend>Which trade?</legend>
@@ -523,12 +524,12 @@
 <fieldset data-step="4" hidden>
 <legend>How do we reach you?</legend>
 <label for="ppb-name">Name</label>
-<input id="ppb-name" name="name" type="text" autocomplete="name" required>
+<input maxlength="120" id="ppb-name" name="name" type="text" autocomplete="name" required>
 <label for="ppb-phone">Phone</label>
-<input id="ppb-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+<input maxlength="40" id="ppb-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
 <label for="ppb-email">Email</label>
-<input id="ppb-email" name="email" type="email" autocomplete="email" required>
-<p class="ppb-qualify-note">Email is required by the inquiry form we already use. We use it to reply. This does not reserve a pilot spot.</p>
+<input maxlength="120" id="ppb-email" name="email" type="email" autocomplete="email" required>
+<p class="ppb-qualify-note">We use these contact and business details to respond to your inquiry by phone or email. Your answers are sent to our team by email. This form does not reserve a spot, book an appointment, or start paid service. For questions about your information, call <a href="tel:+19403945656">(940) 394-5656</a>.</p>
 <div hidden>
 <label for="ppb-company">Company website</label>
 <input id="ppb-company" name="company_website" type="text" tabindex="-1" autocomplete="off">
@@ -542,7 +543,7 @@
 </div>
 </form>
 <div id="ppb-qualify-done" class="ppb-qualify-done" hidden tabindex="-1">
-<h3>We'll review this and call you.</h3>
+<h3>Your inquiry was submitted for email delivery.</h3>
 <p>Sending these answers does not hold one of the five pilot spots. If you do not hear back, call <a href="tel:+19403945656">(940) 394-5656</a>.</p>
 </div>
 </section>
@@ -627,7 +628,7 @@
 <div class="footer-top">
 <a class="wordmark ppb-wordmark" href="/" aria-label="PayPerBooked home"><span class="ppb-mark" aria-hidden="true">P</span><span class="ppb-name">PayPerBooked</span></a>
 <p>Pay per booking answering<br>for North DFW trades.</p>
-<div><span class="ppb-email-placeholder">[placeholder: no payperbooked.com contact email is in this repo]</span><a href="tel:+19403945656">(940) 394-5656</a></div>
+<div><a href="tel:+19403945656">(940) 394-5656</a></div>
 </div>
 <div class="footer-bottom">
 <span>© <span id="year">2026</span> PayPerBooked</span>
@@ -760,103 +761,8 @@
     document.querySelectorAll('.ppb-reveal').forEach(function (node) { revealWatch.observe(node); });
   }
 
-  var qualify = document.getElementById('ppb-qualify');
-  if (!qualify) return;
-  var steps = qualify.querySelectorAll('[data-step]');
-  var step = 0;
-  var stepLabel = document.getElementById('ppb-step-label');
-  var error = document.getElementById('ppb-qualify-error');
-  var back = document.getElementById('ppb-back');
-  var next = document.getElementById('ppb-next');
-  var send = document.getElementById('ppb-send');
-  var labels = ['Trade.', 'Town.', 'Monthly call volume.', 'Name and phone.'];
-  function showError(message) {
-    error.hidden = !message;
-    error.textContent = message || '';
-  }
-  function showStep(index) {
-    step = index;
-    steps.forEach(function (fieldset, i) { fieldset.hidden = i !== index; });
-    stepLabel.textContent = 'Step ' + (index + 1) + ' of 4. ' + labels[index];
-    back.hidden = index === 0;
-    next.hidden = index === steps.length - 1;
-    send.hidden = index !== steps.length - 1;
-    showError('');
-    var focusable = steps[index].querySelector('input, select, button');
-    if (focusable) focusable.focus();
-  }
-  function stepValid() {
-    var fieldset = steps[step];
-    if (step === 0) return !!qualify.querySelector('input[name="trade"]:checked');
-    if (step === 1) return !!document.getElementById('ppb-town').value;
-    if (step === 2) {
-      var volume = parseInt(document.getElementById('ppb-volume').value, 10);
-      return !isNaN(volume) && volume >= 0 && volume <= 10000;
-    }
-    var name = document.getElementById('ppb-name').value.trim();
-    var phone = document.getElementById('ppb-phone').value.replace(/\D/g, '');
-    var email = document.getElementById('ppb-email').value.trim();
-    return name.length > 1 && phone.length >= 10 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
-  next.addEventListener('click', function () {
-    if (!stepValid()) {
-      showError(step === 2 ? 'Enter a monthly call volume from 0 to 10,000.' : (step === 3 ? 'Add your name, a 10-digit phone number, and an email.' : 'Choose an answer to continue.'));
-      return;
-    }
-    showStep(step + 1);
-  });
-  back.addEventListener('click', function () { showStep(step - 1); });
-  qualify.addEventListener('submit', function (event) {
-    event.preventDefault();
-    if (step < 3) {
-      next.click();
-      return;
-    }
-    if (!stepValid()) {
-      showError('Add your name, a 10-digit phone number, and an email.');
-      return;
-    }
-    var name = document.getElementById('ppb-name').value.trim();
-    var parts = name.split(/\s+/);
-    var first = parts.shift();
-    var last = parts.join(' ');
-    var phone = document.getElementById('ppb-phone').value.trim();
-    var email = document.getElementById('ppb-email').value.trim();
-    var trade = qualify.querySelector('input[name="trade"]:checked').value;
-    var town = document.getElementById('ppb-town').value;
-    var volume = document.getElementById('ppb-volume').value;
-    send.disabled = true;
-    function finish(confirmed) {
-      qualify.hidden = true;
-      var done = document.getElementById('ppb-qualify-done');
-      done.hidden = false;
-      if (!confirmed) {
-        done.querySelector('h3').textContent = 'We could not confirm the form was received.';
-        done.querySelector('p').textContent = 'Call (940) 394-5656 and we will take your answers from here.';
-      }
-      done.focus();
-    }
-    fetch('/api/lead-email', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: name,
-        phone: phone,
-        email: email,
-        trade: trade,
-        town: town,
-        volume: volume,
-        source: 'pay-per-booking',
-        page: location.href,
-        company_website: (document.getElementById('ppb-company') || {}).value || ''
-      })
-    }).then(function (res) {
-      return res.json().then(function (data) {
-        finish(res.ok && data && data.ok);
-      }).catch(function () { finish(false); });
-    }).catch(function () { finish(false); });
-  });
 })();
 </script>
+<script src="/payperbooked/inquiry.js"></script>
 </body>
 </html>

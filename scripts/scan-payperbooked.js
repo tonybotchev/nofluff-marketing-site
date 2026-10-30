@@ -8,6 +8,7 @@ const files = [
   'payperbooked/llms.txt',
   'payperbooked/base.css',
   'payperbooked/nav.js',
+  'payperbooked/inquiry.js',
   'payperbooked/robots.txt',
   'payperbooked/sitemap.xml',
   'api/lead-email.js',
@@ -15,6 +16,7 @@ const files = [
 ];
 
 const rules = [
+  ['placeholder', /placeholder:/i],
   ['em dash', /\u2014/],
   ['GHL', /\bGHL\b/],
   ['HighLevel', /highlevel/i],
