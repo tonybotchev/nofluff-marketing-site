@@ -1,0 +1,25 @@
+{
+  "retryableFailure": {
+    "error": "Your inquiry was not submitted. Your answers are saved on this page. Try again shortly or call (940) 394-5656.",
+    "name": "LOCAL MOCK RETRY",
+    "overflow": false,
+    "sendDisabled": false
+  },
+  "retryOutcome": "accepted by local mock only",
+  "clearance": [
+    {
+      "fixedOverlays": [],
+      "footerHeight": 400.109375,
+      "overflow": false,
+      "path": "/pay-per-booking",
+      "width": 390
+    },
+    {
+      "fixedOverlays": [],
+      "footerHeight": 400.109375,
+      "overflow": false,
+      "path": "/payperbooked/booking",
+      "width": 390
+    }
+  ]
+}

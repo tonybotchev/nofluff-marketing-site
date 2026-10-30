@@ -55,5 +55,5 @@ test('unavailable session storage remains usable; unavailable UUID fails without
 });
 test('draft branch suppresses deployments without changing other branch behavior',()=>{
  const config=JSON.parse(fs.readFileSync('vercel.json','utf8'));
- assert.deepEqual(config.git.deploymentEnabled,{'codex/ppb-inquiry-readiness':false});
+ assert.deepEqual(config.git.deploymentEnabled,{'codex/ppb-inquiry-readiness':false,'codex/ppb-premium-review':false});
 });

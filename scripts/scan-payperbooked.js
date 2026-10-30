@@ -9,6 +9,7 @@ const files = [
   'payperbooked/base.css',
   'payperbooked/nav.js',
   'payperbooked/inquiry.js',
+  'payperbooked/calculator.js',
   'payperbooked/robots.txt',
   'payperbooked/sitemap.xml',
   'api/lead-email.js',

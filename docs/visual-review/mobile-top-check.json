@@ -1,0 +1,50 @@
+[
+  {
+    "overflow": false,
+    "path": "/pay-per-booking",
+    "scrollY": 0,
+    "width": 320,
+    "wordmark": {
+      "bottom": 41,
+      "left": 22,
+      "right": 163.03125,
+      "top": 18
+    }
+  },
+  {
+    "overflow": false,
+    "path": "/payperbooked/booking",
+    "scrollY": 0,
+    "width": 320,
+    "wordmark": {
+      "bottom": 41,
+      "left": 22,
+      "right": 163.03125,
+      "top": 18
+    }
+  },
+  {
+    "overflow": false,
+    "path": "/pay-per-booking",
+    "scrollY": 0,
+    "width": 390,
+    "wordmark": {
+      "bottom": 41,
+      "left": 22,
+      "right": 163.03125,
+      "top": 18
+    }
+  },
+  {
+    "overflow": false,
+    "path": "/payperbooked/booking",
+    "scrollY": 0,
+    "width": 390,
+    "wordmark": {
+      "bottom": 41,
+      "left": 22,
+      "right": 163.03125,
+      "top": 18
+    }
+  }
+]
