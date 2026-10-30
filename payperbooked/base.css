@@ -171,3 +171,5 @@ h3 { line-height:1.25; }
   .ppb-qualify .section-heading h2 { font-size:36px; }
 }
 .ppb-qualify { grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); }
+/* Override the shared mobile rule so the workflow link remains available. */
+.ppb-hero .hero-bottom > a { display:inline-flex; align-items:center; }

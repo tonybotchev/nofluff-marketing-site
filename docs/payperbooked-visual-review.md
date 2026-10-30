@@ -54,6 +54,27 @@ These are local rendered screenshots of the draft, not production:
 
 ## Remaining decisions and launch gates
 
+### Mobile evidence follow-up
+
+Fresh local sessions verified home and booking at 320px and 390px with `scrollY=0`. In all four observations, the wordmark bounds were top 18px and bottom 41px; clipping was not reproduced. The four header captures were replaced or added. A restored accepted inquiry can focus its status panel and scroll the page, so top-of-page captures used a fresh session. The cause of the earlier image crop is not established. [Measurements](visual-review/mobile-top-check.json).
+
+The follow-up found a shared mobile CSS rule hiding the home workflow link. A PayPerBooked-only override in `payperbooked/base.css` restores that link. No shared NFM stylesheet or inquiry behavior changed.
+
+Additional local evidence at a 390px browser viewport (375px content width excluding the scrollbar):
+
+- [Complete mobile workflow](visual-review/workflow-mobile-390.jpg)
+- [Initial mobile form](visual-review/form-mobile-390.jpg)
+- [Mock failure with preserved answers and retry](visual-review/form-error-mobile-390.jpg)
+- [Mock acceptance after deliberate retry](visual-review/form-retry-accepted-mobile-390.jpg)
+- [Home footer clearance](visual-review/home-footer-mobile-390.jpg)
+- [Booking footer clearance](visual-review/booking-footer-mobile-390.jpg)
+- [Narrow booking header](visual-review/booking-320.jpg)
+- [Form and clearance measurements](visual-review/mobile-form-clearance.json)
+
+The failure/retry screenshots use synthetic example.test contact data and a loopback-only mock: first a retryable 503, then accepted 202. This is UI evidence, not provider acceptance or inbox receipt. No external message or production submission occurred. Both footer checks found no fixed overlays or horizontal overflow. Native 200% zoom remains unverified; no unavailable native controls were bypassed.
+
+### Release gates remain open
+
 1. Tony's premium/distinctive design review of this candidate; native 200% zoom and final accessibility/browser checks.
 2. Approved privacy/terms/SMS-policy content and accurate legal attribution. Existing /privacy, /terms and /sms-terms are absent; no invented policies are published here.
 3. Evidence for operational voice attachment, business/calendar rules, missed-call textback, campaign journey, callback ownership, onboarding and usage billing. A website inquiry is not operational booking or billing proof.
