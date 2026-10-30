@@ -1,0 +1,98 @@
+[
+  {
+    "client": 305,
+    "path": "/",
+    "priceBottom": 664.78125,
+    "scroll": 305,
+    "visibleFixed": [],
+    "width": 320
+  },
+  {
+    "client": 305,
+    "path": "/pricing",
+    "priceBottom": 626.546875,
+    "scroll": 305,
+    "visibleFixed": [],
+    "width": 320
+  },
+  {
+    "client": 305,
+    "path": "/booking",
+    "priceBottom": 584.03125,
+    "scroll": 305,
+    "visibleFixed": [],
+    "width": 320
+  },
+  {
+    "client": 375,
+    "path": "/",
+    "priceBottom": 604.421875,
+    "scroll": 375,
+    "visibleFixed": [],
+    "width": 390
+  },
+  {
+    "client": 375,
+    "path": "/pricing",
+    "priceBottom": 587.03125,
+    "scroll": 375,
+    "visibleFixed": [],
+    "width": 390
+  },
+  {
+    "client": 375,
+    "path": "/booking",
+    "priceBottom": 584.03125,
+    "scroll": 375,
+    "visibleFixed": [],
+    "width": 390
+  },
+  {
+    "client": 753,
+    "path": "/",
+    "priceBottom": 682.28125,
+    "scroll": 753,
+    "visibleFixed": [],
+    "width": 768
+  },
+  {
+    "client": 753,
+    "path": "/pricing",
+    "priceBottom": 536.09375,
+    "scroll": 753,
+    "visibleFixed": [],
+    "width": 768
+  },
+  {
+    "client": 753,
+    "path": "/booking",
+    "priceBottom": 536.09375,
+    "scroll": 753,
+    "visibleFixed": [],
+    "width": 768
+  },
+  {
+    "client": 1425,
+    "path": "/",
+    "priceBottom": 455.375,
+    "scroll": 1425,
+    "visibleFixed": [],
+    "width": 1440
+  },
+  {
+    "client": 1425,
+    "path": "/pricing",
+    "priceBottom": 598.5,
+    "scroll": 1425,
+    "visibleFixed": [],
+    "width": 1440
+  },
+  {
+    "client": 1425,
+    "path": "/booking",
+    "priceBottom": 595.5,
+    "scroll": 1425,
+    "visibleFixed": [],
+    "width": 1440
+  }
+]

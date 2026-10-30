@@ -81,5 +81,5 @@
     }
   ],
   "cleanUrls": true,
-  "git": { "deploymentEnabled": { "codex/ppb-inquiry-readiness": false } }
+  "git": { "deploymentEnabled": { "codex/ppb-inquiry-readiness": false, "codex/ppb-premium-review": false } }
 }
