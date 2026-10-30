@@ -9,9 +9,13 @@ test('static review artifact excludes all sending code and serves PPB at the roo
   for (const [name, data] of Object.entries(output).filter(([p])=>p.endsWith('.html'))) {
     assert.match(data, /DESIGN PREVIEW/);
     assert.doesNotMatch(data, /inquiry\.js|href="(?:tel:|mailto:)/);
-    for (const form of data.matchAll(/<form\b[^>]*>/g)) assert.match(form[0], /\binert\b/);
-    for (const fieldset of data.matchAll(/<fieldset\b[^>]*>/g)) assert.match(fieldset[0], /\bdisabled\b/);
+    for (const form of data.matchAll(/<form id="ppb-qualify"[\s\S]*?<\/form>/g)) {
+      assert.match(form[0], /\binert\b/);
+      for (const fieldset of form[0].matchAll(/<fieldset\b[^>]*>/g)) assert.match(fieldset[0], /\bdisabled\b/);
+    }
   }
+  const calculator = output['index.html'].match(/<form id="ppb-calc"[\s\S]*?<\/form>/)[0];
+  assert.doesNotMatch(calculator, /\binert\b|\bdisabled\b/);
   const config = JSON.parse(output['vercel.json']);
   const csp = config.headers[0].headers.find(h=>h.key==='Content-Security-Policy').value;
   assert.match(csp, /connect-src 'none'/); assert.match(csp, /form-action 'none'/);

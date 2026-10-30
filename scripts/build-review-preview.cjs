@@ -12,11 +12,13 @@ function files() {
       .replace(/(<body[^>]*>)/, '$1' + notice)
       .replace(/<script src="\/payperbooked\/inquiry.js"><\/script>/g, '')
       .replace(/<noscript>[\s\S]*?<\/noscript>/g, '')
-      .replace(/<form\b([^>]*)>/g, '<form$1 inert aria-label="Preview form disabled">')
-      .replace(/<fieldset\b/g, '<fieldset disabled')
-      .replace(/<form\b[\s\S]*?<\/form>/g, form => form.replace(/<button\b/g, '<button disabled'))
+      .replace(/<form id="ppb-qualify"[\s\S]*?<\/form>/g, form =>
+        '<p role="note">Preview only: inquiry submission is disabled.</p>' + form
+          .replace('<form id="ppb-qualify" novalidate hidden>', '<form id="ppb-qualify" novalidate inert aria-label="Preview form disabled">')
+          .replace(/<fieldset\b/g, '<fieldset disabled')
+          .replace(/<button\b/g, '<button disabled'))
       .replace(/href="(?:tel:|mailto:)[^"]*"/g, 'aria-disabled="true"')
-      .replace('<form ', '<p role="note">Preview only: inquiry submission is disabled.</p><form ');
+      ;
   }
   const home = page('pay-per-booking.html');
   const pricing = page('payperbooked/pricing.html');
